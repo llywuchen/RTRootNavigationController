@@ -349,7 +349,7 @@ __attribute((overloadable)) static inline UIViewController *RTSafeWrapViewContro
 
 - (BOOL)rt_hasSetInteractivePop
 {
-    return !!objc_getAssociatedObject(self, @selector(rt_disableInteractivePop));
+    return !objc_getAssociatedObject(self, @selector(rt_disableInteractivePop));
 }
 
 @end
