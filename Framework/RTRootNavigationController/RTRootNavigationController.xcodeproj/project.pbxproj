@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A310FC61FB5AAE5005F7D7F /* RTRootNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A310FC41FB5AAE5005F7D7F /* RTRootNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A310FD81FB5AB51005F7D7F /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0A310FD31FB5AB51005F7D7F /* .gitkeep */; };
+		0A310FD91FB5AB51005F7D7F /* RTRootNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A310FD41FB5AB51005F7D7F /* RTRootNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A310FDA1FB5AB51005F7D7F /* RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A310FD51FB5AB51005F7D7F /* RTRootNavigationController.m */; };
+		0A310FDB1FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A310FD61FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A310FDC1FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A310FD71FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A310FC11FB5AAE5005F7D7F /* RTRootNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RTRootNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A310FC41FB5AAE5005F7D7F /* RTRootNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTRootNavigationController.h; sourceTree = "<group>"; };
 		0A310FC51FB5AAE5005F7D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A310FD31FB5AB51005F7D7F /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0A310FD41FB5AB51005F7D7F /* RTRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRootNavigationController.h; sourceTree = "<group>"; };
+		0A310FD51FB5AB51005F7D7F /* RTRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRootNavigationController.m; sourceTree = "<group>"; };
+		0A310FD61FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RTRootNavigationController.h"; sourceTree = "<group>"; };
+		0A310FD71FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RTRootNavigationController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,23 @@
 		0A310FC31FB5AAE5005F7D7F /* RTRootNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				0A310FC41FB5AAE5005F7D7F /* RTRootNavigationController.h */,
+				0A310FD21FB5AB51005F7D7F /* Classes */,
 				0A310FC51FB5AAE5005F7D7F /* Info.plist */,
 			);
 			path = RTRootNavigationController;
+			sourceTree = "<group>";
+		};
+		0A310FD21FB5AB51005F7D7F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0A310FD31FB5AB51005F7D7F /* .gitkeep */,
+				0A310FD41FB5AB51005F7D7F /* RTRootNavigationController.h */,
+				0A310FD51FB5AB51005F7D7F /* RTRootNavigationController.m */,
+				0A310FD61FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.h */,
+				0A310FD71FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.m */,
+			);
+			name = Classes;
+			path = ../../../RTRootNavigationController/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +80,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A310FC61FB5AAE5005F7D7F /* RTRootNavigationController.h in Headers */,
+				0A310FD91FB5AB51005F7D7F /* RTRootNavigationController.h in Headers */,
+				0A310FDB1FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A310FD81FB5AB51005F7D7F /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A310FDC1FB5AB51005F7D7F /* UIViewController+RTRootNavigationController.m in Sources */,
+				0A310FDA1FB5AB51005F7D7F /* RTRootNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
