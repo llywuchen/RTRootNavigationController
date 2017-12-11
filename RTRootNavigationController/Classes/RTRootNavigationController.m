@@ -438,6 +438,10 @@ __attribute((overloadable)) static inline UIViewController *RTSafeWrapViewContro
 - (void)pushViewController:(UIViewController *)viewController
                   animated:(BOOL)animated
 {
+    if(!viewController){
+        NSLog(@"viewController is nil,can't run pushViewController");
+        return;
+    }
     if (self.navigationController) {
         [self.navigationController pushViewController:viewController
                                              animated:animated];
@@ -472,6 +476,10 @@ __attribute((overloadable)) static inline UIViewController *RTSafeWrapViewContro
 - (NSArray<__kindof UIViewController *> *)popToViewController:(UIViewController *)viewController
                                                      animated:(BOOL)animated
 {
+    if(!viewController) {
+        NSLog(@"viewController is nil,can't run popToViewController");
+        return nil;
+    }
     if (self.navigationController)
         return [self.navigationController popToViewController:viewController
                                                      animated:animated];
